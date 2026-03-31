@@ -24,7 +24,6 @@ body {
   line-height: 1.6;
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
-
   display: flex;
   min-height: 100vh;
 }
@@ -145,7 +144,7 @@ article li {
 /* =========================
    RESPONSIVO
 ========================= */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   body {
     flex-direction: column;
   }
