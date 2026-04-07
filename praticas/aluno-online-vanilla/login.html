@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aluno Online – Login</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <main>
+    <div class="form-container">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="56" height="56">
+          <path d="M320 32L0 160l320 128 245-98v70c0 8.8 7.2 16 16 16h18c8.8 0 16-7.2 16-16V250L640 160 320 32zM88 296v112c0 26.5 105.9 48 232 48s232-21.5 232-48V296L320 384 88 296z"/>
+        </svg>
+      </div>
+
+      <h1>Aluno Online</h1>
+
+      <form id="loginForm" novalidate>
+        <div class="field-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" />
+          <p class="error-msg" id="emailError"></p>
+        </div>
+
+        <div class="field-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" autocomplete="current-password" />
+          <p class="error-msg" id="senhaError"></p>
+        </div>
+
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
